@@ -17,21 +17,21 @@ ROLES_CHOICES = (
 
 
 class UserProfile(User):
-    role = models.CharField(u'User Profile', unique=True, choices=ROLES_CHOICES, default='FU')
+    role = models.CharField(u'User Profile', unique=True, choices=ROLES_CHOICES, default='FU', max_length=100)
 
 
 class Account(models.Model):
     """
     Person Account
     """
-    user = models.ForeignKey(u"User Profile", UserProfile, on_delete=models.CASCADE)
+    user = models.ForeignKey(UserProfile, on_delete=models.CASCADE)
     value_invested = models.FloatField(u"Value Insvested", blank=False, null=False)
     fee = models.PositiveSmallIntegerField(u"Fee", default=0)
-    contract_duration = models.CharField(u"Contract Duration", choices=CONTRACT_CHOICES, default='1_YEAR')
+    contract_duration = models.CharField(u"Contract Duration", choices=CONTRACT_CHOICES, default='1_YEAR', max_length=100)
     start_date = models.DateField(u"Start Date", auto_now=True, auto_now_add=False)
     value_current = models.FloatField(u"Current Value")
 
     updated_at = models.DateTimeField(u"Last Update", auto_now=True)
 
-    class Meta:
-        ordering = 'first_name'
+    #class Meta:
+        #ordering = ['first_name']
