@@ -150,7 +150,7 @@ TEMPLATES = [
 
 ########## MIDDLEWARE CONFIGURATION
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#middleware-classes
-MIDDLEWARE_CLASSES = (
+MIDDLEWARE = (
     # Default Django middleware.
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -190,7 +190,8 @@ DJANGO_APPS = (
 LOCAL_APPS = (
     'coins',
     'people',
-    'exchanges'
+    'exchanges',
+    'transactions'
 )
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps

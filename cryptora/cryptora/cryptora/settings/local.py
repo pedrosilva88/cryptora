@@ -22,9 +22,9 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': '',
-        'USER': '',
-        'PASSWORD': '',
+        'NAME': 'myDB',
+        'USER': 'pedrosilva',
+        'PASSWORD': '123456',
         'HOST': 'localhost',
         'PORT': '',
     }
@@ -48,7 +48,7 @@ INSTALLED_APPS += (
     #'debug_toolbar',
 )
 
-MIDDLEWARE_CLASSES += (
+MIDDLEWARE += (
     #'debug_toolbar.middleware.DebugToolbarMiddleware',
 )
 
