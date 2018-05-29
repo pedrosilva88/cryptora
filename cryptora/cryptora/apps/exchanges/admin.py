@@ -5,3 +5,5 @@ from django.contrib import admin
 from exchanges.models import *
 
 admin.site.register(Exchange)
+admin.site.register(ExchangeCoin)
+admin.site.register(Price)

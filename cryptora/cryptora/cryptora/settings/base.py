@@ -50,6 +50,9 @@ DATABASES = {
 }
 ########## END DATABASE CONFIGURATION
 
+CRONJOBS = [
+    ('*/30 * * * *', 'exchanges.crons.importPrices')
+]
 
 ########## GENERAL CONFIGURATION
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#time-zone
@@ -161,12 +164,10 @@ MIDDLEWARE = (
 )
 ########## END MIDDLEWARE CONFIGURATION
 
-
 ########## URL CONFIGURATION
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#root-urlconf
 ROOT_URLCONF = '%s.urls' % SITE_NAME
 ########## END URL CONFIGURATION
-
 
 ########## APP CONFIGURATION
 DJANGO_APPS = (
@@ -191,7 +192,8 @@ LOCAL_APPS = (
     'coins',
     'people',
     'exchanges',
-    'transactions'
+    'transactions',
+    'django_crontab'
 )
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps

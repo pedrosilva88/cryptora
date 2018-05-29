@@ -22,7 +22,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'myDB',
+        'NAME': SITE_ROOT+'/myDB',
         'USER': 'pedrosilva',
         'PASSWORD': '123456',
         'HOST': 'localhost',
@@ -30,7 +30,6 @@ DATABASES = {
     }
 }
 ########## END DATABASE CONFIGURATION
-
 
 ########## CACHE CONFIGURATION
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#caches

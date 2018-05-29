@@ -16,8 +16,8 @@ class Coin(models.Model):
 
 
 class CoinChange(models.Model):
-    coin = models.ForeignKey(Coin, on_delete=models.CASCADE, related_name="related_coin", blank=False, null=False)
-    coin_to_change = models.ForeignKey(Coin, on_delete=models.CASCADE, related_name="related_coin_to_change", blank=False, null=False)
+    coin = models.ForeignKey(Coin, on_delete=models.CASCADE, related_name="coinchange_coin", blank=False, null=False)
+    coin_to_change = models.ForeignKey(Coin, on_delete=models.CASCADE, related_name="coinchange_coin_to_change", blank=False, null=False)
 
     def __str__(self):
         return self.coin.key + u'/' + self.coin_to_change.key
