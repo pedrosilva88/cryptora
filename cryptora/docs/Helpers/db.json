@@ -1,1 +1,2125 @@
-[{"model": "contenttypes.contenttype", "pk": 1, "fields": {"app_label": "auth", "model": "permission"}}, {"model": "contenttypes.contenttype", "pk": 2, "fields": {"app_label": "auth", "model": "group"}}, {"model": "contenttypes.contenttype", "pk": 3, "fields": {"app_label": "auth", "model": "user"}}, {"model": "contenttypes.contenttype", "pk": 4, "fields": {"app_label": "contenttypes", "model": "contenttype"}}, {"model": "contenttypes.contenttype", "pk": 5, "fields": {"app_label": "sessions", "model": "session"}}, {"model": "contenttypes.contenttype", "pk": 6, "fields": {"app_label": "sites", "model": "site"}}, {"model": "contenttypes.contenttype", "pk": 7, "fields": {"app_label": "admin", "model": "logentry"}}, {"model": "contenttypes.contenttype", "pk": 8, "fields": {"app_label": "coins", "model": "coin"}}, {"model": "contenttypes.contenttype", "pk": 9, "fields": {"app_label": "coins", "model": "coinchange"}}, {"model": "contenttypes.contenttype", "pk": 10, "fields": {"app_label": "people", "model": "account"}}, {"model": "contenttypes.contenttype", "pk": 11, "fields": {"app_label": "people", "model": "userprofile"}}, {"model": "contenttypes.contenttype", "pk": 12, "fields": {"app_label": "exchanges", "model": "exchange"}}, {"model": "contenttypes.contenttype", "pk": 13, "fields": {"app_label": "exchanges", "model": "exchangecoin"}}, {"model": "contenttypes.contenttype", "pk": 14, "fields": {"app_label": "exchanges", "model": "price"}}, {"model": "contenttypes.contenttype", "pk": 15, "fields": {"app_label": "transactions", "model": "transaction"}}, {"model": "contenttypes.contenttype", "pk": 16, "fields": {"app_label": "transactions", "model": "transactionmethod"}}, {"model": "sessions.session", "pk": "t9h80f9y8ua7ejodrjpzmcxnw6dm23de", "fields": {"session_data": "ZTUyNGYyNzcwMWQzNWZjYTc3MDAwNzdmMjZiMTIwMzUzMjJlMjAwMzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJjYzc4MjAxYThkZjc0ZDhkYTUxNWE0NTM4ZGYzNTA3ZjhlNmI0M2EwIn0=", "expire_date": "2018-06-08T15:31:42.319Z"}}, {"model": "sites.site", "pk": 1, "fields": {"domain": "example.com", "name": "example.com"}}, {"model": "coins.coin", "pk": 1, "fields": {"name": "Ethereum", "key": "ETH"}}, {"model": "coins.coin", "pk": 2, "fields": {"name": "Bitcoin", "key": "BTC"}}, {"model": "coins.coin", "pk": 3, "fields": {"name": "Euro", "key": "EUR"}}, {"model": "coins.coinchange", "pk": 1, "fields": {"coin": 1, "coin_to_change": 3}}, {"model": "coins.coinchange", "pk": 2, "fields": {"coin": 1, "coin_to_change": 2}}, {"model": "coins.coinchange", "pk": 3, "fields": {"coin": 2, "coin_to_change": 3}}, {"model": "exchanges.exchange", "pk": 1, "fields": {"name": "GDAX", "url": "gdax.com"}}, {"model": "exchanges.exchangecoin", "pk": 1, "fields": {"api": "https://api-public.sandbox.gdax.com", "coin_change": 1, "exchange": 1}}, {"model": "exchanges.exchangecoin", "pk": 2, "fields": {"api": "gdax.com/api/btc-eur", "coin_change": 3, "exchange": 1}}
+[{
+	"model": "contenttypes.contenttype",
+	"pk": 1,
+	"fields": {
+		"app_label": "auth",
+		"model": "permission"
+	}
+}, {
+	"model": "contenttypes.contenttype",
+	"pk": 2,
+	"fields": {
+		"app_label": "auth",
+		"model": "group"
+	}
+}, {
+	"model": "contenttypes.contenttype",
+	"pk": 3,
+	"fields": {
+		"app_label": "auth",
+		"model": "user"
+	}
+}, {
+	"model": "contenttypes.contenttype",
+	"pk": 4,
+	"fields": {
+		"app_label": "contenttypes",
+		"model": "contenttype"
+	}
+}, {
+	"model": "contenttypes.contenttype",
+	"pk": 5,
+	"fields": {
+		"app_label": "sessions",
+		"model": "session"
+	}
+}, {
+	"model": "contenttypes.contenttype",
+	"pk": 6,
+	"fields": {
+		"app_label": "sites",
+		"model": "site"
+	}
+}, {
+	"model": "contenttypes.contenttype",
+	"pk": 7,
+	"fields": {
+		"app_label": "admin",
+		"model": "logentry"
+	}
+}, {
+	"model": "contenttypes.contenttype",
+	"pk": 8,
+	"fields": {
+		"app_label": "coins",
+		"model": "coin"
+	}
+}, {
+	"model": "contenttypes.contenttype",
+	"pk": 9,
+	"fields": {
+		"app_label": "coins",
+		"model": "coinchange"
+	}
+}, {
+	"model": "contenttypes.contenttype",
+	"pk": 10,
+	"fields": {
+		"app_label": "people",
+		"model": "account"
+	}
+}, {
+	"model": "contenttypes.contenttype",
+	"pk": 11,
+	"fields": {
+		"app_label": "people",
+		"model": "userprofile"
+	}
+}, {
+	"model": "contenttypes.contenttype",
+	"pk": 12,
+	"fields": {
+		"app_label": "exchanges",
+		"model": "exchange"
+	}
+}, {
+	"model": "contenttypes.contenttype",
+	"pk": 13,
+	"fields": {
+		"app_label": "exchanges",
+		"model": "exchangecoin"
+	}
+}, {
+	"model": "contenttypes.contenttype",
+	"pk": 14,
+	"fields": {
+		"app_label": "exchanges",
+		"model": "price"
+	}
+}, {
+	"model": "contenttypes.contenttype",
+	"pk": 15,
+	"fields": {
+		"app_label": "transactions",
+		"model": "transaction"
+	}
+}, {
+	"model": "contenttypes.contenttype",
+	"pk": 16,
+	"fields": {
+		"app_label": "transactions",
+		"model": "transactionmethod"
+	}
+}, {
+	"model": "sessions.session",
+	"pk": "wvqxq43owks839shdv0tz3wfagd636rh",
+	"fields": {
+		"session_data": "YjRlZTVhOTgzNWNlNmM3NDY2MjAyNjJjNjAyZWQwMTFjNWM2Nzg0Yjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJhZDkyMWFhMjQzNzcyODQ0MmQ4MjEzMDBlMDRiY2UxNjFkMGZlZTI5In0=",
+		"expire_date": "2018-06-11T15:26:44.050Z"
+	}
+}, {
+	"model": "sites.site",
+	"pk": 1,
+	"fields": {
+		"domain": "example.com",
+		"name": "example.com"
+	}
+}, {
+	"model": "coins.coin",
+	"pk": 1,
+	"fields": {
+		"name": "Ethereum",
+		"key": "ETH"
+	}
+}, {
+	"model": "coins.coin",
+	"pk": 2,
+	"fields": {
+		"name": "Euro",
+		"key": "EUR"
+	}
+}, {
+	"model": "coins.coin",
+	"pk": 3,
+	"fields": {
+		"name": "Bitcoin",
+		"key": "BTC"
+	}
+}, {
+	"model": "coins.coinchange",
+	"pk": 1,
+	"fields": {
+		"coin": 1,
+		"coin_to_change": 2
+	}
+}, {
+	"model": "coins.coinchange",
+	"pk": 2,
+	"fields": {
+		"coin": 3,
+		"coin_to_change": 2
+	}
+}, {
+	"model": "coins.coinchange",
+	"pk": 3,
+	"fields": {
+		"coin": 1,
+		"coin_to_change": 3
+	}
+}, {
+	"model": "coins.coinchange",
+	"pk": 4,
+	"fields": {
+		"coin": 2,
+		"coin_to_change": null
+	}
+}, {
+	"model": "exchanges.exchange",
+	"pk": 1,
+	"fields": {
+		"name": "GDAX",
+		"url": "gdax.com"
+	}
+}, {
+	"model": "exchanges.exchange",
+	"pk": 2,
+	"fields": {
+		"name": "Fund",
+		"url": "fund.com"
+	}
+}, {
+	"model": "exchanges.exchange",
+	"pk": 3,
+	"fields": {
+		"name": "ICO",
+		"url": "ico.com"
+	}
+}, {
+	"model": "exchanges.exchangecoin",
+	"pk": 1,
+	"fields": {
+		"api": "gdax.com/api/eth-eur",
+		"coin_change": 1,
+		"exchange": 1
+	}
+}, {
+	"model": "exchanges.exchangecoin",
+	"pk": 2,
+	"fields": {
+		"api": "gdax.com/api/btc-eur",
+		"coin_change": 2,
+		"exchange": 1
+	}
+}, {
+	"model": "exchanges.exchangecoin",
+	"pk": 3,
+	"fields": {
+		"api": "gdax.com/api/btc-eth",
+		"coin_change": 3,
+		"exchange": 1
+	}
+}, {
+	"model": "exchanges.exchangecoin",
+	"pk": 4,
+	"fields": {
+		"api": "fund.com/eur",
+		"coin_change": 4,
+		"exchange": 2
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 29,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "467.00000000",
+		"date": "2018-05-29T11:12:01.666Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 30,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6320.96000000",
+		"date": "2018-05-29T11:12:02.271Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 31,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "466.40000000",
+		"date": "2018-05-29T11:14:01.499Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 32,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6312.88000000",
+		"date": "2018-05-29T11:14:02.234Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 33,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "465.45000000",
+		"date": "2018-05-29T11:16:01.691Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 34,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6312.99000000",
+		"date": "2018-05-29T11:16:02.351Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 35,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "465.75000000",
+		"date": "2018-05-29T11:18:01.863Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 36,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6325.84000000",
+		"date": "2018-05-29T11:18:02.467Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 37,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "467.62000000",
+		"date": "2018-05-29T11:20:01.254Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 38,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6328.77000000",
+		"date": "2018-05-29T11:20:01.828Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 39,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "468.01000000",
+		"date": "2018-05-29T11:22:02.235Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 40,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6333.96000000",
+		"date": "2018-05-29T11:22:02.910Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 41,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "468.57000000",
+		"date": "2018-05-29T11:24:02.181Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 42,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6331.99000000",
+		"date": "2018-05-29T11:24:02.779Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 43,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07379000",
+		"date": "2018-05-29T11:24:03.350Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 44,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "468.58000000",
+		"date": "2018-05-29T11:26:01.608Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 45,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6333.38000000",
+		"date": "2018-05-29T11:26:02.193Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 46,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07387000",
+		"date": "2018-05-29T11:26:02.838Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 47,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "476.14000000",
+		"date": "2018-05-29T11:30:01.126Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 48,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6430.81000000",
+		"date": "2018-05-29T11:30:01.742Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 49,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07381000",
+		"date": "2018-05-29T11:30:02.329Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 50,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "479.07000000",
+		"date": "2018-05-29T12:00:01.478Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 51,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6406.36000000",
+		"date": "2018-05-29T12:00:02.085Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 52,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07469000",
+		"date": "2018-05-29T12:00:02.698Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 53,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "480.00000000",
+		"date": "2018-05-29T12:30:01.814Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 54,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6407.08000000",
+		"date": "2018-05-29T12:30:02.428Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 55,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07481000",
+		"date": "2018-05-29T12:30:03.042Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 56,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "482.84000000",
+		"date": "2018-05-29T13:00:01.465Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 57,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6413.33000000",
+		"date": "2018-05-29T13:00:02.108Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 58,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07527000",
+		"date": "2018-05-29T13:00:02.698Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 59,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "491.80000000",
+		"date": "2018-05-29T13:30:01.149Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 60,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6452.01000000",
+		"date": "2018-05-29T13:30:01.752Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 61,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07616000",
+		"date": "2018-05-29T13:30:02.412Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 62,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "490.92000000",
+		"date": "2018-05-29T14:00:01.504Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 63,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6452.01000000",
+		"date": "2018-05-29T14:00:02.117Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 64,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07599000",
+		"date": "2018-05-29T14:00:02.742Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 65,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "481.87000000",
+		"date": "2018-05-29T14:30:01.076Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 66,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6415.72000000",
+		"date": "2018-05-29T14:30:01.715Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 67,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07519000",
+		"date": "2018-05-29T14:30:02.310Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 68,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "481.99000000",
+		"date": "2018-05-29T15:00:03.015Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 69,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6435.02000000",
+		"date": "2018-05-29T15:00:05.786Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 70,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07508000",
+		"date": "2018-05-29T15:00:07.627Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 71,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "489.56000000",
+		"date": "2018-05-30T14:42:01.803Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 72,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6477.50000000",
+		"date": "2018-05-30T14:42:02.407Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 73,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07562000",
+		"date": "2018-05-30T14:42:03.031Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 74,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "489.57000000",
+		"date": "2018-05-30T14:44:02.023Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 75,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6474.99000000",
+		"date": "2018-05-30T14:44:03.562Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 76,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07562000",
+		"date": "2018-05-30T14:44:05.471Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 77,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "486.92000000",
+		"date": "2018-05-30T14:46:01.837Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 78,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6428.00000000",
+		"date": "2018-05-30T14:46:02.412Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 79,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07553000",
+		"date": "2018-05-30T14:46:02.984Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 80,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "483.00000000",
+		"date": "2018-05-30T14:48:01.299Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 81,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6428.83000000",
+		"date": "2018-05-30T14:48:02.878Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 82,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07517000",
+		"date": "2018-05-30T14:48:04.414Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 83,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "482.20000000",
+		"date": "2018-05-30T14:50:04.227Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 84,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6425.75000000",
+		"date": "2018-05-30T14:50:07.450Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 85,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07506000",
+		"date": "2018-05-30T14:50:10.779Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 86,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "482.40000000",
+		"date": "2018-05-30T14:52:02.095Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 87,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6428.79000000",
+		"date": "2018-05-30T14:52:02.709Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 88,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07506000",
+		"date": "2018-05-30T14:52:03.324Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 89,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "482.39000000",
+		"date": "2018-05-30T14:54:04.669Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 90,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6420.59000000",
+		"date": "2018-05-30T14:54:05.654Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 91,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07512000",
+		"date": "2018-05-30T14:54:09.318Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 92,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "476.95000000",
+		"date": "2018-05-30T14:56:01.247Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 93,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6371.42000000",
+		"date": "2018-05-30T14:56:01.925Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 94,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07497000",
+		"date": "2018-05-30T14:56:02.137Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 95,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "475.06000000",
+		"date": "2018-05-30T14:58:02.513Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 96,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6367.29000000",
+		"date": "2018-05-30T14:58:04.090Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 97,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07487000",
+		"date": "2018-05-30T14:58:06.447Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 98,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "477.89000000",
+		"date": "2018-05-30T15:00:01.753Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 99,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6376.05000000",
+		"date": "2018-05-30T15:00:02.779Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 100,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07495000",
+		"date": "2018-05-30T15:00:03.421Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 101,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "475.55000000",
+		"date": "2018-05-30T15:02:02.796Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 102,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6348.49000000",
+		"date": "2018-05-30T15:02:04.229Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 103,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07495000",
+		"date": "2018-05-30T15:02:05.048Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 104,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "473.20000000",
+		"date": "2018-05-30T15:04:01.277Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 105,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6332.34000000",
+		"date": "2018-05-30T15:04:01.883Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 106,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07480000",
+		"date": "2018-05-30T15:04:02.455Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 107,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "473.03000000",
+		"date": "2018-05-30T15:06:02.555Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 108,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6349.00000000",
+		"date": "2018-05-30T15:06:02.792Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 109,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07494000",
+		"date": "2018-05-30T15:06:03.355Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 110,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "476.00000000",
+		"date": "2018-05-30T15:08:02.023Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 111,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6342.83000000",
+		"date": "2018-05-30T15:08:02.670Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 112,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07501000",
+		"date": "2018-05-30T15:08:02.887Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 113,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "475.33000000",
+		"date": "2018-05-30T15:12:05.950Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 114,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6342.02000000",
+		"date": "2018-05-30T15:12:08.612Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 115,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07501000",
+		"date": "2018-05-30T15:12:10.598Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 116,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "474.59000000",
+		"date": "2018-05-30T15:14:01.973Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 117,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6342.00000000",
+		"date": "2018-05-30T15:14:02.587Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 118,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07489000",
+		"date": "2018-05-30T15:14:03.202Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 119,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "473.00000000",
+		"date": "2018-05-30T15:16:04.345Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 120,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6330.00000000",
+		"date": "2018-05-30T15:16:06.188Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 121,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07480000",
+		"date": "2018-05-30T15:16:09.232Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 122,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "471.39000000",
+		"date": "2018-05-30T15:18:04.359Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 123,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6317.16000000",
+		"date": "2018-05-30T15:18:05.788Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 124,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07484000",
+		"date": "2018-05-30T15:18:07.939Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 125,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "472.30000000",
+		"date": "2018-05-30T15:20:03.040Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 126,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6318.72000000",
+		"date": "2018-05-30T15:20:03.672Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 127,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07486000",
+		"date": "2018-05-30T15:20:04.420Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 128,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "473.10000000",
+		"date": "2018-05-30T15:22:02.483Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 129,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6318.71000000",
+		"date": "2018-05-30T15:22:03.060Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 130,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07501000",
+		"date": "2018-05-30T15:22:03.670Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 131,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "473.59000000",
+		"date": "2018-05-30T15:24:03.378Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 132,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6335.02000000",
+		"date": "2018-05-30T15:24:03.590Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 133,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07495000",
+		"date": "2018-05-30T15:24:04.595Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 134,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "473.60000000",
+		"date": "2018-05-30T15:26:01.865Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 135,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6328.32000000",
+		"date": "2018-05-30T15:26:02.471Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 136,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07496000",
+		"date": "2018-05-30T15:26:03.031Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 137,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "473.68000000",
+		"date": "2018-05-30T15:28:01.973Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 138,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6325.51000000",
+		"date": "2018-05-30T15:28:02.558Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 139,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07493000",
+		"date": "2018-05-30T15:28:04.023Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 140,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "476.56000000",
+		"date": "2018-05-30T15:30:01.272Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 141,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6325.52000000",
+		"date": "2018-05-30T15:30:01.863Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 142,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07523000",
+		"date": "2018-05-30T15:30:02.456Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 143,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "476.32000000",
+		"date": "2018-05-30T15:32:03.952Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 144,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6334.16000000",
+		"date": "2018-05-30T15:32:06.196Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 145,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07532000",
+		"date": "2018-05-30T15:32:08.253Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 146,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "476.31000000",
+		"date": "2018-05-30T15:34:03.967Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 147,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6328.87000000",
+		"date": "2018-05-30T15:34:06.592Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 148,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07533000",
+		"date": "2018-05-30T15:34:09.907Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 149,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "477.78000000",
+		"date": "2018-05-30T15:36:01.392Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 150,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6332.41000000",
+		"date": "2018-05-30T15:36:02.013Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 151,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07541000",
+		"date": "2018-05-30T15:36:02.651Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 152,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "477.36000000",
+		"date": "2018-05-30T15:38:02.169Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 153,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6332.40000000",
+		"date": "2018-05-30T15:38:02.723Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 154,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07530000",
+		"date": "2018-05-30T15:38:03.325Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 155,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "475.90000000",
+		"date": "2018-05-30T15:40:03.916Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 156,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6332.00000000",
+		"date": "2018-05-30T15:40:04.488Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 157,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07520000",
+		"date": "2018-05-30T15:40:05.144Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 158,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "475.08000000",
+		"date": "2018-05-30T15:42:01.388Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 159,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6331.00000000",
+		"date": "2018-05-30T15:42:01.965Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 160,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07529000",
+		"date": "2018-05-30T15:42:02.558Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 161,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "475.09000000",
+		"date": "2018-05-30T15:44:03.944Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 162,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6324.71000000",
+		"date": "2018-05-30T15:44:06.756Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 163,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07517000",
+		"date": "2018-05-30T15:44:10.086Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 164,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "475.00000000",
+		"date": "2018-05-30T15:46:04.470Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 165,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6324.98000000",
+		"date": "2018-05-30T15:46:06.212Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 166,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07508000",
+		"date": "2018-05-30T15:46:08.207Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 167,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "475.00000000",
+		"date": "2018-05-30T15:48:01.119Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 168,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6330.00000000",
+		"date": "2018-05-30T15:48:01.676Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 169,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07510000",
+		"date": "2018-05-30T15:48:02.333Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 170,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "475.50000000",
+		"date": "2018-05-30T15:50:02.781Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 171,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6330.05000000",
+		"date": "2018-05-30T15:50:04.476Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 172,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07513000",
+		"date": "2018-05-30T15:50:05.069Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 173,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "474.88000000",
+		"date": "2018-05-30T15:52:01.543Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 174,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6328.02000000",
+		"date": "2018-05-30T15:52:02.173Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 175,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07513000",
+		"date": "2018-05-30T15:52:02.747Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 176,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "474.38000000",
+		"date": "2018-05-30T15:54:02.293Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 177,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6301.00000000",
+		"date": "2018-05-30T15:54:02.876Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 178,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07515000",
+		"date": "2018-05-30T15:54:03.503Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 179,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "472.91000000",
+		"date": "2018-05-30T15:56:03.986Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 180,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6313.59000000",
+		"date": "2018-05-30T15:56:05.566Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 181,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07500000",
+		"date": "2018-05-30T15:56:08.029Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 182,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "471.99000000",
+		"date": "2018-05-30T15:58:01.278Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 183,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6312.69000000",
+		"date": "2018-05-30T15:58:01.892Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 184,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07492000",
+		"date": "2018-05-30T15:58:02.119Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 185,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "471.19000000",
+		"date": "2018-05-30T16:00:05.034Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 186,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6304.12000000",
+		"date": "2018-05-30T16:00:09.176Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 187,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07487000",
+		"date": "2018-05-30T16:00:13.367Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 188,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "470.78000000",
+		"date": "2018-05-30T16:02:03.561Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 189,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6300.99000000",
+		"date": "2018-05-30T16:02:07.759Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 190,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07494000",
+		"date": "2018-05-30T16:02:09.908Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 191,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "472.46000000",
+		"date": "2018-05-30T16:04:04.594Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 192,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6301.00000000",
+		"date": "2018-05-30T16:04:07.059Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 193,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07511000",
+		"date": "2018-05-30T16:04:08.238Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 194,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "473.57000000",
+		"date": "2018-05-30T16:06:01.626Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 195,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6318.85000000",
+		"date": "2018-05-30T16:06:02.218Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 196,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07512000",
+		"date": "2018-05-30T16:06:02.875Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 197,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "475.00000000",
+		"date": "2018-05-30T16:08:03.913Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 198,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6315.96000000",
+		"date": "2018-05-30T16:08:04.629Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 199,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07512000",
+		"date": "2018-05-30T16:08:06.986Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 200,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "473.89000000",
+		"date": "2018-05-30T16:12:01.859Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 201,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6315.96000000",
+		"date": "2018-05-30T16:12:02.510Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 202,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07509000",
+		"date": "2018-05-30T16:12:03.075Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 203,
+	"fields": {
+		"exchange_coin": 1,
+		"value": "473.85000000",
+		"date": "2018-05-30T16:14:01.751Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 204,
+	"fields": {
+		"exchange_coin": 2,
+		"value": "6316.00000000",
+		"date": "2018-05-30T16:14:02.370Z"
+	}
+}, {
+	"model": "exchanges.price",
+	"pk": 205,
+	"fields": {
+		"exchange_coin": 3,
+		"value": "0.07500000",
+		"date": "2018-05-30T16:14:03.119Z"
+	}
+}, {
+	"model": "transactions.transactionmethod",
+	"pk": 1,
+	"fields": {
+		"type": "BUY"
+	}
+}, {
+	"model": "transactions.transactionmethod",
+	"pk": 2,
+	"fields": {
+		"type": "SELL"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 1,
+	"fields": {
+		"name": "Can add permission",
+		"content_type": 1,
+		"codename": "add_permission"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 2,
+	"fields": {
+		"name": "Can change permission",
+		"content_type": 1,
+		"codename": "change_permission"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 3,
+	"fields": {
+		"name": "Can delete permission",
+		"content_type": 1,
+		"codename": "delete_permission"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 4,
+	"fields": {
+		"name": "Can add group",
+		"content_type": 2,
+		"codename": "add_group"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 5,
+	"fields": {
+		"name": "Can change group",
+		"content_type": 2,
+		"codename": "change_group"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 6,
+	"fields": {
+		"name": "Can delete group",
+		"content_type": 2,
+		"codename": "delete_group"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 7,
+	"fields": {
+		"name": "Can add user",
+		"content_type": 3,
+		"codename": "add_user"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 8,
+	"fields": {
+		"name": "Can change user",
+		"content_type": 3,
+		"codename": "change_user"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 9,
+	"fields": {
+		"name": "Can delete user",
+		"content_type": 3,
+		"codename": "delete_user"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 10,
+	"fields": {
+		"name": "Can add content type",
+		"content_type": 4,
+		"codename": "add_contenttype"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 11,
+	"fields": {
+		"name": "Can change content type",
+		"content_type": 4,
+		"codename": "change_contenttype"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 12,
+	"fields": {
+		"name": "Can delete content type",
+		"content_type": 4,
+		"codename": "delete_contenttype"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 13,
+	"fields": {
+		"name": "Can add session",
+		"content_type": 5,
+		"codename": "add_session"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 14,
+	"fields": {
+		"name": "Can change session",
+		"content_type": 5,
+		"codename": "change_session"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 15,
+	"fields": {
+		"name": "Can delete session",
+		"content_type": 5,
+		"codename": "delete_session"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 16,
+	"fields": {
+		"name": "Can add site",
+		"content_type": 6,
+		"codename": "add_site"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 17,
+	"fields": {
+		"name": "Can change site",
+		"content_type": 6,
+		"codename": "change_site"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 18,
+	"fields": {
+		"name": "Can delete site",
+		"content_type": 6,
+		"codename": "delete_site"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 19,
+	"fields": {
+		"name": "Can add log entry",
+		"content_type": 7,
+		"codename": "add_logentry"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 20,
+	"fields": {
+		"name": "Can change log entry",
+		"content_type": 7,
+		"codename": "change_logentry"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 21,
+	"fields": {
+		"name": "Can delete log entry",
+		"content_type": 7,
+		"codename": "delete_logentry"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 22,
+	"fields": {
+		"name": "Can add Coin",
+		"content_type": 8,
+		"codename": "add_coin"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 23,
+	"fields": {
+		"name": "Can change Coin",
+		"content_type": 8,
+		"codename": "change_coin"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 24,
+	"fields": {
+		"name": "Can delete Coin",
+		"content_type": 8,
+		"codename": "delete_coin"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 25,
+	"fields": {
+		"name": "Can add coin change",
+		"content_type": 9,
+		"codename": "add_coinchange"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 26,
+	"fields": {
+		"name": "Can change coin change",
+		"content_type": 9,
+		"codename": "change_coinchange"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 27,
+	"fields": {
+		"name": "Can delete coin change",
+		"content_type": 9,
+		"codename": "delete_coinchange"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 28,
+	"fields": {
+		"name": "Can add account",
+		"content_type": 10,
+		"codename": "add_account"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 29,
+	"fields": {
+		"name": "Can change account",
+		"content_type": 10,
+		"codename": "change_account"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 30,
+	"fields": {
+		"name": "Can delete account",
+		"content_type": 10,
+		"codename": "delete_account"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 31,
+	"fields": {
+		"name": "Can add user",
+		"content_type": 11,
+		"codename": "add_userprofile"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 32,
+	"fields": {
+		"name": "Can change user",
+		"content_type": 11,
+		"codename": "change_userprofile"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 33,
+	"fields": {
+		"name": "Can delete user",
+		"content_type": 11,
+		"codename": "delete_userprofile"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 34,
+	"fields": {
+		"name": "Can add exchange",
+		"content_type": 12,
+		"codename": "add_exchange"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 35,
+	"fields": {
+		"name": "Can change exchange",
+		"content_type": 12,
+		"codename": "change_exchange"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 36,
+	"fields": {
+		"name": "Can delete exchange",
+		"content_type": 12,
+		"codename": "delete_exchange"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 37,
+	"fields": {
+		"name": "Can add exchange coin",
+		"content_type": 13,
+		"codename": "add_exchangecoin"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 38,
+	"fields": {
+		"name": "Can change exchange coin",
+		"content_type": 13,
+		"codename": "change_exchangecoin"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 39,
+	"fields": {
+		"name": "Can delete exchange coin",
+		"content_type": 13,
+		"codename": "delete_exchangecoin"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 40,
+	"fields": {
+		"name": "Can add price",
+		"content_type": 14,
+		"codename": "add_price"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 41,
+	"fields": {
+		"name": "Can change price",
+		"content_type": 14,
+		"codename": "change_price"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 42,
+	"fields": {
+		"name": "Can delete price",
+		"content_type": 14,
+		"codename": "delete_price"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 43,
+	"fields": {
+		"name": "Can add Transaction",
+		"content_type": 15,
+		"codename": "add_transaction"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 44,
+	"fields": {
+		"name": "Can change Transaction",
+		"content_type": 15,
+		"codename": "change_transaction"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 45,
+	"fields": {
+		"name": "Can delete Transaction",
+		"content_type": 15,
+		"codename": "delete_transaction"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 46,
+	"fields": {
+		"name": "Can add transaction method",
+		"content_type": 16,
+		"codename": "add_transactionmethod"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 47,
+	"fields": {
+		"name": "Can change transaction method",
+		"content_type": 16,
+		"codename": "change_transactionmethod"
+	}
+}, {
+	"model": "auth.permission",
+	"pk": 48,
+	"fields": {
+		"name": "Can delete transaction method",
+		"content_type": 16,
+		"codename": "delete_transactionmethod"
+	}
+}, {
+	"model": "auth.group",
+	"pk": 1,
+	"fields": {
+		"name": "Master",
+		"permissions": [19, 20, 21, 4, 5, 6, 1, 2, 3, 7, 8, 9, 22, 23, 24, 25, 26, 27, 10, 11, 12, 34, 35, 36, 37, 38, 39, 40, 41, 42, 28, 29, 30, 31, 32, 33, 13, 14, 15, 16, 17, 18, 43, 44, 45, 46, 47, 48]
+	}
+}, {
+	"model": "auth.group",
+	"pk": 2,
+	"fields": {
+		"name": "Manager",
+		"permissions": [22, 23, 24, 25, 26, 27, 34, 35, 36, 37, 38, 39, 43, 44, 45, 46, 47, 48]
+	}
+}, {
+	"model": "auth.group",
+	"pk": 3,
+	"fields": {
+		"name": "Fund Invester",
+		"permissions": []
+	}
+}, {
+	"model": "auth.user",
+	"pk": 1,
+	"fields": {
+		"password": "pbkdf2_sha256$100000$O0eB5imOTUGf$GWgMZsIrpzL3/j3oYr05CJuYRT15qjNuSGt2p/b4wHg=",
+		"last_login": "2018-05-29T14:53:46Z",
+		"is_superuser": true,
+		"username": "pedrosilva",
+		"first_name": "Pedro",
+		"last_name": "Silva",
+		"email": "sir.silva.pedro@gmail.com",
+		"is_staff": true,
+		"is_active": true,
+		"date_joined": "2018-05-28T15:25:52Z",
+		"groups": [1],
+		"user_permissions": []
+	}
+}, {
+	"model": "auth.user",
+	"pk": 4,
+	"fields": {
+		"password": "pbkdf2_sha256$100000$bargYzs2X1WI$9A71blQ7OCb2Egc87ElP5DVx4f/BUKmiLjMYPNHqn1w=",
+		"last_login": null,
+		"is_superuser": true,
+		"username": "pedrosilva_invester",
+		"first_name": "Pedro",
+		"last_name": "Silva",
+		"email": "",
+		"is_staff": true,
+		"is_active": true,
+		"date_joined": "2018-05-29T14:54:18Z",
+		"groups": [],
+		"user_permissions": []
+	}
+}, {
+	"model": "auth.user",
+	"pk": 5,
+	"fields": {
+		"password": "pbkdf2_sha256$100000$RA8Ta8kfNhlZ$ervEpAe6kQi+1dSTKPZaRYIdjDUrf0NrrdNQZt4iioI=",
+		"last_login": null,
+		"is_superuser": false,
+		"username": "user1",
+		"first_name": "",
+		"last_name": "",
+		"email": "",
+		"is_staff": false,
+		"is_active": true,
+		"date_joined": "2018-05-29T14:57:02Z",
+		"groups": [3],
+		"user_permissions": []
+	}
+}, {
+	"model": "people.account",
+	"pk": 8,
+	"fields": {
+		"user": 1,
+		"value_invested": 1000.0,
+		"fee": 0,
+		"contract_duration": "UNLIMITED",
+		"start_date": "2018-05-30",
+		"value_current": 1000.0,
+		"updated_at": "2018-05-30T15:03:33.123Z"
+	}
+}]

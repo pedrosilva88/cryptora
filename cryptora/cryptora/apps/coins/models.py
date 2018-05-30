@@ -2,7 +2,6 @@
 from __future__ import unicode_literals
 from django.db import models
 
-
 class Coin(models.Model):
     name = models.CharField(u'Coin name', unique=True, blank=False, null=False, max_length=100)
     key = models.CharField(u'Coin key', unique=True, blank=False, null=False, max_length=100)
@@ -17,7 +16,10 @@ class Coin(models.Model):
 
 class CoinChange(models.Model):
     coin = models.ForeignKey(Coin, on_delete=models.CASCADE, related_name="coinchange_coin", blank=False, null=False)
-    coin_to_change = models.ForeignKey(Coin, on_delete=models.CASCADE, related_name="coinchange_coin_to_change", blank=False, null=False)
+    coin_to_change = models.ForeignKey(Coin, on_delete=models.CASCADE, related_name="coinchange_coin_to_change", blank=True, null=True)
 
     def __str__(self):
-        return self.coin.key + u'/' + self.coin_to_change.key
+        if self.coin_to_change:
+            return self.coin.key + u'/' + self.coin_to_change.key
+        else:
+            return self.coin.key

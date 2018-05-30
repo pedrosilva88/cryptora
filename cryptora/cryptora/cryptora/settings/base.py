@@ -51,12 +51,12 @@ DATABASES = {
 ########## END DATABASE CONFIGURATION
 
 CRONJOBS = [
-    ('*/30 * * * *', 'exchanges.crons.importPrices')
+    ('*/2 * * * *', 'exchanges.crons.importPrices')
 ]
 
 ########## GENERAL CONFIGURATION
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#time-zone
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Lisbon'
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#language-code
 LANGUAGE_CODE = 'en-us'
@@ -243,8 +243,6 @@ WSGI_APPLICATION = '%s.wsgi.application' % SITE_NAME
 ########## SOUTH CONFIGURATION
 # See: http://south.readthedocs.org/en/latest/installation.html#configuring-your-django-installation
 INSTALLED_APPS += (
-    # Database migration helpers:
-    #'south',
 )
 # Don't need to use South when setting up a test database.
 SOUTH_TESTS_MIGRATE = False

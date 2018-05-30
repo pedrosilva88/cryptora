@@ -1,4 +1,4 @@
-from exchanges.models import Price, ExchangeCoin, Exchange, EXCHANGE_CHOICES
+from exchanges.models import Price, ExchangeCoin, Exchange
 from transactions.models import *
 from django.utils import timezone
 import gdax
