@@ -51,7 +51,8 @@ DATABASES = {
 ########## END DATABASE CONFIGURATION
 
 CRONJOBS = [
-    ('*/2 * * * *', 'exchanges.crons.importPrices')
+    ('*/30 * * * *', 'exchanges.crons.importPrices'),
+    ('0 * * * *', 'people.fund.updateUsersFundValue')
 ]
 
 ########## GENERAL CONFIGURATION

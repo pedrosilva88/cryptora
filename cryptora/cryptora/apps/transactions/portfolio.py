@@ -16,6 +16,7 @@ def createPortfolio():
 
     print('Finished')
     print('Portfolio Value: ' + str(round(portfolio.totalValue,2))+'€')
+    return portfolio
 
 def createCoinDataWithTransactions(transactions):
     coindata = CoinData()
@@ -30,6 +31,10 @@ def createCoinDataWithTransactions(transactions):
                             getCashValueForCoin(transaction.exchange_coin.coin_change),
                             transaction.n_tokens
                             )
+            if coindata.coin_change.coin_to_change.key != 'EUR':
+                currentValue = currentValue * getCashValueForCoin(CoinChange.objects.get(coin=transaction.exchange_coin.coin_change.coin_to_change,
+                                                                                        coin_to_change__key = 'EUR'))
+
         else:
             currentValue = transaction.n_tokens
 
@@ -64,16 +69,9 @@ class Portfolio():
     totalValue = 0
     coins = []
 
-    # def __init__(self):
-    #
-    # def instanceMethod(self):
-    #
-    # def classMethod():
 
 class CoinData():
     coin_change = None
     tokens = 0
     coinChangeValue = 0
     cashValue = 0
-
-    # def __init__(self):
