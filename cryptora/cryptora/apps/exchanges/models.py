@@ -8,7 +8,8 @@ EXCHANGES = (
     ('FUND', 'Fund'),
     ('GDAX', 'GDAX'),
     ('BINANCE', 'Binance'),
-    ('BITTREX', 'Bittrex')
+    ('BITTREX', 'Bittrex'),
+    ('KUCOIN', 'Kucoin')
 )
 
 class Exchange(models.Model):

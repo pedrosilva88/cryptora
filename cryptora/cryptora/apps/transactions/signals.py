@@ -14,9 +14,8 @@ from django.utils import timezone
 @receiver(pre_save, sender=Account)
 def signalForPreSave(sender, instance, **kwargs):
     try:
-        listing = Account.objects.get(pk=instance.pk)
+        Account.objects.get(pk=instance.pk)
     except Account.DoesNotExist:
-        print("Presave update fund")
         updateUsersFundValue()
 
 @receiver(post_save, sender=Transaction)

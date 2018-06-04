@@ -12,10 +12,9 @@ def createPortfolio():
         coindata = createCoinDataWithTransactions(value)
         portfolio.totalValue += coindata.cashValue
         portfolio.coins.append(coindata)
-        print(str(round(coindata.tokens,2)) + coindata.coin_change.coin.key + ' (' + str(round(coindata.cashValue,2)) + '€)')
+        #print(str(round(coindata.tokens,2)) + coindata.coin_change.coin.key + ' (' + str(round(coindata.cashValue,2)) + '€)')
 
-    print('Finished')
-    print('Portfolio Value: ' + str(round(portfolio.totalValue,2))+'€')
+    #print('Portfolio Value: ' + str(round(portfolio.totalValue,2))+'€')
     return portfolio
 
 def createCoinDataWithTransactions(transactions):
