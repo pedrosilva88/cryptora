@@ -1,4 +1,5 @@
 from django.conf.urls import include, url
+from django.urls import path
 from django.conf.urls.static import static
 from django.conf import settings
 from django.views.generic import TemplateView
@@ -18,7 +19,8 @@ urlpatterns = [
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
     # Uncomment the next line to enable the admin:
-    url(r'^admin/', admin.site.urls)
+    url(r'^admin/', admin.site.urls),
+    path(r'transactions/', include('transactions.urls'))
 ]
 
 

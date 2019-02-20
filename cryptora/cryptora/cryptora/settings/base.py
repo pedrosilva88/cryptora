@@ -50,10 +50,10 @@ DATABASES = {
 }
 ########## END DATABASE CONFIGURATION
 
-CRONJOBS = [
-    ('*/30 * * * *', 'exchanges.crons.importPrices'),
-    ('0 * * * *', 'people.fund.updateUsersFundValue')
-]
+# CRONJOBS = [
+#      ('*/30 * * * *', 'exchanges.crons.importPrices'),
+#      ('0 * * * *', 'people.fund.updateUsersFundValue')
+# ]
 
 ########## GENERAL CONFIGURATION
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#time-zone
@@ -194,7 +194,8 @@ LOCAL_APPS = (
     'people',
     'exchanges',
     'transactions',
-    'django_crontab'
+    'django_crontab',
+    'rest_framework'
 )
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
