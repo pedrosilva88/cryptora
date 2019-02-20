@@ -61,7 +61,7 @@ def getTotalCashValueForCoin(coinValue, nTokens):
 
 def getCashValueForCoin(coin_change):
     exchangeCoin = ExchangeCoin.objects.get(coin_change=coin_change)
-    price = Price.objects.filter(exchange_coin=exchangeCoin).earliest('date')
+    price = Price.objects.filter(exchange_coin=exchangeCoin).latest('date')
     return price.value
 
 class Portfolio():
