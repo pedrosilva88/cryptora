@@ -34,6 +34,7 @@ def postObjectCreated(sender, instance, created, **kwargs):
                             ExchangeCoin.objects.get(exchange=Exchange.objects.get(name='Fund')),
                             instance.value_invested,
                             1)
+        updateUsersFundValue()
     elif sender == Transaction and instance.sync == True and instance.synced_transaction == None and instance.exchange_coin.exchange.name != 'Fund':
         method = TransactionMethod.objects.get(type='BUY') if instance.transaction_method.type == 'SELL' else TransactionMethod.objects.get(type='SELL')
         exchangeCoin = None
@@ -51,6 +52,7 @@ def postObjectCreated(sender, instance, created, **kwargs):
         valueInvested = instance.n_tokens * instance.price_per_token
         instance.synced_transaction = createTransaction(instance, method, exchangeCoin, valueInvested, pricePerToken)
         instance.save()
+        updateUsersFundValue()
 
 def postObjectUpdated(sender, instance, created, **kwargs):
     if sender == Transaction and instance.synced_transaction != None and instance.exchange_coin.exchange.name != 'Fund':

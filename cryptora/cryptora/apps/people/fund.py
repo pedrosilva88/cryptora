@@ -5,7 +5,7 @@ from django.db.models import Sum
 from transactions.portfolio import createPortfolio, Portfolio, CoinData
 from people.models import Account
 
-def updateUsersFundValue():
+def updateUsersFundValue():    
     portfolio = createPortfolio()
     totalValue = Account.objects.all().aggregate(Sum('value_current')).get('value_current__sum')
 

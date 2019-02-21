@@ -6,3 +6,7 @@ from django.apps import AppConfig
 
 class PeopleConfig(AppConfig):
     name = 'people'
+
+    def ready(self):
+        from people.fund import updateUsersFundValue
+        updateUsersFundValue()
