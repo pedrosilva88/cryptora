@@ -76,3 +76,31 @@ Install
   ```
 
 
+
+
+Frontend & Backoffice Configs
+=============================
+
+```
+
+cd  {PathToProject}/{ProjectName}/
+mkdir libraries && cd libraries
+npm init -y
+npm i webpack webpack-cli --save-dev
+
+```
+
+* Now open up package.json and configure the scripts:
+
+```
+"scripts": {
+  "dev": "webpack --mode development ./project/frontend/src/index.js --output ./project/frontend/static/frontend/main.js",
+  "build": "webpack --mode production ./project/frontend/src/index.js --output ./project/frontend/static/frontend/main.js"
+}
+```
+
+```
+npm i @babel/core babel-loader @babel/preset-env @babel/preset-react babel-plugin-transform-class-properties --save-dev
+npm i react react-dom prop-types --save-dev
+npm i weak-key --save-dev
+```

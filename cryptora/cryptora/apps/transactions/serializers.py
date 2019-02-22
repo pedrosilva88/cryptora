@@ -1,12 +1,7 @@
 from rest_framework import serializers
-from transactions.portfolio import Portfolio, CoinData
+from transactions.models import Transaction
 
-class PortfolioSerializer(serializers.ModelSerializer):
+class TransactionSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Portfolio
-        fields = '__all__'
-
-class CoinDataSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = CoinData
+        model = Transaction
         fields = '__all__'

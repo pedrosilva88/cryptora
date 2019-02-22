@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../Base/.idea/Base.iml" filepath="$PROJECT_DIR$/../Base/.idea/Base.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/cryptoPandora.iml" filepath="$PROJECT_DIR$/.idea/cryptoPandora.iml" />
     </modules>
   </component>

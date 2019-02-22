@@ -1,12 +1,9 @@
 # -*- coding: utf-8 -*-
-from __future__ import unicode_literals
-#from django.shortcuts import render
-from transactions.portfolio import createPortfolio
-from transactions.serializers import PortfolioSerializer
-from people.fund import	updateUsersFundValue
+from transactions.models import Transaction
+from transactions.serializers import TransactionSerializer
 from rest_framework import generics
 
-#class PortfolioListCreate(generics.ListCreateAPIView):
 
-    #queryset = createPortfolio().coins
-    #serializer_class = PortfolioSerializer
+class TransatctionsListCreate(generics.ListCreateAPIView):
+    queryset = Transaction.objects.all()
+    serializer_class = TransactionSerializer

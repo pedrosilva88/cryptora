@@ -20,7 +20,9 @@ urlpatterns = [
 
     # Uncomment the next line to enable the admin:
     url(r'^admin/', admin.site.urls),
-    path(r'transactions/', include('transactions.urls'))
+    path(r'api/', include('transactions.urls')),
+    path('backoffice/', include('webapp.urls'))
+
 ]
 
 

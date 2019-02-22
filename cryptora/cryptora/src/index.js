@@ -1,0 +1,1 @@
+import App from "./../apps/webapp/src/components/App";
