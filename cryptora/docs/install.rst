@@ -103,4 +103,10 @@ npm i webpack webpack-cli --save-dev
 npm i @babel/core babel-loader @babel/preset-env @babel/preset-react babel-plugin-transform-class-properties --save-dev
 npm i react react-dom prop-types --save-dev
 npm i weak-key --save-dev
+npm install bulma--save-dev
+npm install css-loader --save-dev
+npm install extract-text-webpack-plugin@next --save-dev
+npm install node-sass --save-dev
+npm install sass-loader --save-dev
+npm install style-loader --save-dev
 ```
