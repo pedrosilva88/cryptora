@@ -12,7 +12,7 @@ class App extends Component {
         return(
             <div className="App">
                 <header className="App-header">
-//                    <img src={logo} className="App-logo"/>
+                    <img src="" className="App-logo"/>
                     <Welcome/>
                     </header>
             </div>
@@ -24,7 +24,7 @@ class App extends Component {
 
 class Welcome extends Component {
     render(){
-        <h1 className="App-title">{welcome}</h1>
+       return( <h1 className="App-title">{welcome}</h1>)
     }
 }
 
