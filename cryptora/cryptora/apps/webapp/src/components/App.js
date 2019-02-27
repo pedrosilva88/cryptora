@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
+import "~ css/main.css";
 
 //import logo from './../../../../static/apple-touch-icon.png';
 
-const welcome = "Welcome to React"
+const welcome = "Welcome to React";
 
 class App extends Component {
 

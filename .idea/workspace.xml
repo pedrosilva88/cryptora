@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16a1dcd1-88f4-4a4e-99f3-16002bb2b8dd" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.babelrc" beforeDir="false" afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/cryptoPandora.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/cryptoPandora.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cryptora/cryptora/apps/webapp/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/cryptora/cryptora/apps/webapp/src/components/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cryptora/cryptora/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/cryptora/cryptora/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cryptora/cryptora/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/cryptora/cryptora/static/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cryptora/cryptora/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/cryptora/cryptora/static/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cryptora/docs/install.rst" beforeDir="false" afterPath="$PROJECT_DIR$/cryptora/docs/install.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/npm-debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,20 +44,9 @@
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5314685">
+    <splitter split-orientation="horizontal" split-proportion="0.48152867">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="cryptora.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/cryptora/cryptora/static/js/cryptora.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <folding>
-                    <element signature="n#!!doc" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/cryptora/cryptora/templates/index.html">
               <provider selected="true" editor-type-id="text-editor">
@@ -58,41 +56,14 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/cryptora/cryptora/templates/base.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="600">
-                  <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/cryptora/cryptora/apps/webapp/src/components/App.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="45">
-                  <caret line="3" column="63" selection-start-line="3" selection-start-column="63" selection-end-line="3" selection-end-column="63" />
+                <state relative-caret-position="105">
+                  <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
                   <folding>
                     <element signature="e#0#41#0" expanded="true" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/package.json">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="480">
-                  <caret line="41" selection-start-line="41" selection-end-line="41" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/webpack.config.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="270">
-                  <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
                 </state>
               </provider>
             </entry>
@@ -100,20 +71,8 @@
           <file leaf-file-name=".babelrc" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/.babelrc">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="120">
-                  <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="DataProvider.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/cryptora/cryptora/apps/webapp/src/components/DataProvider.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="495">
-                  <caret line="34" column="18" selection-start-line="34" selection-end-line="34" selection-end-column="28" />
-                  <folding>
-                    <element signature="e#0#41#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="165">
+                  <caret line="11" column="65" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
                 </state>
               </provider>
             </entry>
@@ -122,52 +81,51 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/cryptora/cryptora/apps/webapp/views.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="60">
-                  <caret line="4" selection-start-line="4" selection-end-line="4" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Table.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/cryptora/cryptora/apps/webapp/src/components/Table.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="105">
-                  <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-                  <folding>
-                    <element signature="e#0#26#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/cryptora/cryptora/static/css/main.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="330">
-                  <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/cryptora/cryptora/static/js/main.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
+                <state relative-caret-position="30">
+                  <caret line="4" selection-start-line="4" selection-end-line="4" />
                   <folding>
-                    <element signature="n#!!doc" expanded="true" />
+                    <element signature="e#5#32#0" />
+                    <element signature="e#44#143#0" />
+                    <element signature="e#157#368#0" />
+                    <element signature="e#381#404#0" />
+                    <element signature="e#416#439#0" />
+                    <element signature="e#441#569#0" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="install.rst" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/cryptora/docs/install.rst">
+          <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/cryptora/cryptora/src/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1650">
-                  <caret line="110" column="20" selection-start-line="110" selection-end-line="111" />
+                <state>
+                  <folding>
+                    <element signature="e#1#55#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="base.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/cryptora/cryptora/cryptora/settings/base.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="783">
+                  <caret line="222" column="29" selection-start-line="222" selection-start-column="29" selection-end-line="222" selection-end-column="29" />
+                  <folding>
+                    <element signature="e#37#99#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/webpack.config.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="300">
+                  <caret line="20" column="2" lean-forward="true" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
                 </state>
               </provider>
             </entry>
@@ -196,6 +154,7 @@
       <find>cryptora.</find>
       <find>static/libra</find>
       <find>componentDidMount</find>
+      <find>WEBPACK_LOADER</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/cryptora/cryptora/static/css</dir>
@@ -235,18 +194,22 @@
         <option value="$PROJECT_DIR$/cryptora/cryptora/apps/webapp/src/components/DataProvider.js" />
         <option value="$PROJECT_DIR$/cryptora/cryptora/static/libraries/package.json" />
         <option value="$PROJECT_DIR$/cryptora/package.json" />
-        <option value="$PROJECT_DIR$/.babelrc" />
         <option value="$PROJECT_DIR$/npm/package.json" />
         <option value="$PROJECT_DIR$/cryptora/cryptora/cryptora/settings/base.py" />
         <option value="$PROJECT_DIR$/cryptora/cryptora/apps/webapp/views.py" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/cryptora/cryptora/apps/webapp/src/components/Table.js" />
-        <option value="$PROJECT_DIR$/webpack.config.js" />
-        <option value="$PROJECT_DIR$/cryptora/docs/install.rst" />
         <option value="$PROJECT_DIR$/cryptora/cryptora/templates/index.html" />
+        <option value="$PROJECT_DIR$/cryptora/cryptora/src/Constants.js" />
+        <option value="$PROJECT_DIR$/cryptora/cryptora/src/constants.js" />
+        <option value="$PROJECT_DIR$/cryptora/config-overrides.js" />
+        <option value="$PROJECT_DIR$/config-overrides.js" />
         <option value="$PROJECT_DIR$/cryptora/cryptora/src/index.js" />
-        <option value="$PROJECT_DIR$/cryptora/cryptora/static/css/main.css" />
+        <option value="$PROJECT_DIR$/cryptora/docs/install.rst" />
         <option value="$PROJECT_DIR$/cryptora/cryptora/apps/webapp/src/components/App.js" />
+        <option value="$PROJECT_DIR$/.babelrc" />
+        <option value="$PROJECT_DIR$/webpack.config.js" />
+        <option value="$PROJECT_DIR$/cryptora/cryptora/static/css/main.css" />
       </list>
     </option>
   </component>
@@ -261,7 +224,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="755" />
     <option name="y" value="-1417" />
     <option name="width" value="1903" />
@@ -296,42 +259,7 @@
               <item name="cryptoPandora" type="462c0819:PsiDirectoryNode" />
               <item name="cryptora" type="462c0819:PsiDirectoryNode" />
               <item name="cryptora" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cryptoPandora" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cryptoPandora" type="462c0819:PsiDirectoryNode" />
-              <item name="cryptora" type="462c0819:PsiDirectoryNode" />
-              <item name="cryptora" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="transactions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cryptoPandora" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cryptoPandora" type="462c0819:PsiDirectoryNode" />
-              <item name="cryptora" type="462c0819:PsiDirectoryNode" />
-              <item name="cryptora" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cryptoPandora" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cryptoPandora" type="462c0819:PsiDirectoryNode" />
-              <item name="cryptora" type="462c0819:PsiDirectoryNode" />
-              <item name="cryptora" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cryptoPandora" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cryptoPandora" type="462c0819:PsiDirectoryNode" />
-              <item name="cryptora" type="462c0819:PsiDirectoryNode" />
-              <item name="cryptora" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cryptoPandora" type="b2602c69:ProjectViewProjectNode" />
@@ -374,11 +302,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/cryptora/cryptora" />
       <recent name="$PROJECT_DIR$/cryptora" />
       <recent name="$PROJECT_DIR$/cryptora/cryptora/static" />
       <recent name="$PROJECT_DIR$/cryptora/cryptora/src" />
-      <recent name="$PROJECT_DIR$/cryptora/cryptora/apps" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -633,18 +561,18 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="755" y="-1417" width="1903" height="1389" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.5002687" side_tool="true" weight="0.27941176" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32972136" />
+      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.5002687" side_tool="true" weight="0.33436534" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32894737" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="10" visible="true" weight="0.32972136" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33436534" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49973133" weight="0.27941176" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.499194" weight="0.32894737" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32972136" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49973133" weight="0.33436534" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49973133" visible="true" weight="0.27941176" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49961978" visible="true" weight="0.15636754" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.3295393" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="SciView" order="4" weight="0.3295393" />
       <window_info id="Structure" order="1" sideWeight="0.5003802" side_tool="true" weight="0.17064123" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -668,7 +596,6 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.5002687" side_tool="true" weight="0.27941176" />
       <window_info anchor="right" id="SciView" order="4" weight="0.3295393" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49973133" visible="true" weight="0.35031846" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="12" weight="0.32927758" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -713,23 +640,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cryptora/cryptora/apps/webapp/src/components/DataProvider.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="18" lean-forward="true" selection-start-line="34" selection-end-line="34" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cryptora/cryptora/static/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cryptora/cryptora/apps/webapp/src/components/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -835,17 +745,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/npm/package.json" />
-    <entry file="file://$PROJECT_DIR$/cryptora/cryptora/cryptora/settings/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1425">
-          <caret line="96" column="40" selection-start-line="96" selection-start-column="40" selection-end-line="96" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cryptora/cryptora/apps/transactions/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="7" column="53" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
+          <folding>
+            <element signature="e#24#63#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -853,6 +759,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+          <folding>
+            <element signature="e#24#63#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -860,6 +769,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -875,37 +787,6 @@
     </entry>
     <entry file="file:///usr/local/Cellar/python/3.6.4_4/Frameworks/Python.framework/Versions/3.6/lib/python3.6/selectors.py" />
     <entry file="file://$PROJECT_DIR$/cryptora/cryptora/static/libs/html5shiv.js" />
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.babelrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cryptora/cryptora/apps/webapp/src/components/DataProvider.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="34" column="18" selection-start-line="34" selection-end-line="34" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cryptora/cryptora/apps/webapp/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cryptora/cryptora/apps/webapp/src/components/Table.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -916,24 +797,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cryptora/cryptora/static/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/react.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="298" column="8" selection-start-line="298" selection-start-column="8" selection-end-line="298" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cryptora/docs/install.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1650">
-          <caret line="110" column="20" selection-start-line="110" selection-end-line="111" />
         </state>
       </provider>
     </entry>
@@ -946,24 +813,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cryptora/cryptora/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
+        <state relative-caret-position="615">
           <caret line="41" selection-start-line="41" selection-end-line="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cryptora/cryptora/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/cryptora/cryptora/apps/webapp/src/components/DataProvider.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        <state relative-caret-position="510">
+          <caret line="34" column="18" selection-start-line="34" selection-end-line="34" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryptora/cryptora/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -976,19 +846,95 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cryptora/cryptora/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryptora/cryptora/cryptora/settings/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="783">
+          <caret line="222" column="29" selection-start-line="222" selection-start-column="29" selection-end-line="222" selection-end-column="29" />
+          <folding>
+            <element signature="e#37#99#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryptora/cryptora/apps/webapp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryptora/cryptora/src/constants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config-overrides.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryptora/docs/install.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="102" column="41" selection-start-line="102" selection-start-column="41" selection-end-line="102" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.babelrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="65" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cryptora/cryptora/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state>
+          <folding>
+            <element signature="e#1#55#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cryptora/cryptora/apps/webapp/src/components/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="63" selection-start-line="3" selection-start-column="63" selection-end-line="3" selection-end-column="63" />
+        <state relative-caret-position="105">
+          <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="2" lean-forward="true" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cryptora/cryptora/static/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#5#32#0" />
+            <element signature="e#44#143#0" />
+            <element signature="e#157#368#0" />
+            <element signature="e#381#404#0" />
+            <element signature="e#416#439#0" />
+            <element signature="e#441#569#0" />
           </folding>
         </state>
       </provider>
