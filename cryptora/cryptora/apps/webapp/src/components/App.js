@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 
 //import logo from './../../../../static/apple-touch-icon.png';
-import './../../../../static/css/main.css';
 
 const welcome = "Welcome to React"
 
@@ -14,9 +13,8 @@ class App extends Component {
                 <header className="App-header">
                     <img src="" className="App-logo"/>
                     <Welcome/>
-                    </header>
+                </header>
             </div>
-
         )
     }
 
