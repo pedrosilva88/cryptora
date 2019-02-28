@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import "~ css/main.css";
+import Logo from '~ media/logo.svg';
 
-//import logo from './../../../../static/apple-touch-icon.png';
 
-const welcome = "Welcome to React";
+const welcome = "Welcome to Cryptopia";
 
 class App extends Component {
 
@@ -11,7 +11,7 @@ class App extends Component {
         return(
             <div className="App">
                 <header className="App-header">
-                    <img src="" className="App-logo"/>
+                    <Logo width={100} height={100}/>
                     <Welcome/>
                 </header>
             </div>
