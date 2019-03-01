@@ -75,16 +75,12 @@ Install
   
   ```
 
-
-
-
 Frontend & Backoffice Configs
 =============================
 
 ```
 
 cd  {PathToProject}/{ProjectName}/
-mkdir libraries && cd libraries
 npm init -y
 npm i webpack webpack-cli --save-dev
 
@@ -94,8 +90,9 @@ npm i webpack webpack-cli --save-dev
 
 ```
 "scripts": {
-  "dev": "webpack --mode development ./project/frontend/src/index.js --output ./project/frontend/static/frontend/main.js",
-  "build": "webpack --mode production ./project/frontend/src/index.js --output ./project/frontend/static/frontend/main.js"
+    "dev": "webpack --mode development ./cryptora/cryptora/src/index.js --output ./cryptora/cryptora/static/js/main.js",
+    "build": "webpack --mode production ./cryptora/cryptora/src/index.js --output ./cryptora/cryptora/static/js/main.js",
+    "watch": "npm run dev -- --watch"
 }
 ```
 
@@ -104,10 +101,9 @@ npm i @babel/core babel-loader @babel/preset-env @babel/preset-react babel-plugi
 npm i babel-plugin-root-import --save-dev
 npm i react react-dom prop-types --save-dev
 npm i weak-key --save-dev
-npm install bulma --save-dev
-npm install css-loader --save-dev
-npm install extract-text-webpack-plugin@next --save-dev
-npm install node-sass --save-dev
-npm install style-loader --save-dev
-npm install svg-inline-loader --save-dev
+npm i bulma --save-dev
+npm i css-loader --save-dev
+npm i extract-text-webpack-plugin@next --save-dev
+npm i style-loader --save-dev
+npm i svg-inline-loader --save-dev
 ```

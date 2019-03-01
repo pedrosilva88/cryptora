@@ -9,12 +9,7 @@ class App extends Component {
 
     render() {
         return(
-            <div className="App">
-                <header className="App-header">
-                    <Logo width={100} height={100}/>
-                    <Welcome/>
-                </header>
-            </div>
+            <Row />
         )
     }
 
@@ -22,21 +17,49 @@ class App extends Component {
 
 class Welcome extends Component {
     render(){
-       return( <h1 className="App-title">{welcome}</h1>)
+       return(
+           <div className="columns App">
+               <div className="columns">
+                   <header className="App-header">
+                       <Logo width={40} height={40} className="App-logo" alt="logo"/>
+                       <h1 className="App-title">{welcome}</h1>)
+                   </header>
+                   <p className="App-intro"> Cryptora in the house </p>
+               </div>
+           </div>
+       )
+    }
+}
+
+class Row extends Component {
+    render() {
+        return (
+            <div className="column">
+                <div className="columns is-desktop">
+                    <div className="column App-box">
+                        <p className="App-box">
+                            One
+                        </p>
+                    </div>
+                    <div className="column App-box">
+                        <p className="App-box">
+                            Two
+                        </p>
+                    </div>
+                    <div className="column App-box">
+                        <p className="App-box">
+                            Three
+                        </p>
+                    </div>
+                    <div className="column App-box">
+                        <p className="App-box">
+                            Four
+                        </p>
+                    </div>
+                </div>
+            </div>
+        )
     }
 }
 
 export default App;
-
-
-
-// import DataProvider from "./DataProvider";
-// import Table from "./Table";
-
-// const App = () => (
-//   <DataProvider endpoint="/api/transactions/"
-//                 render={data => <Table data={data} />} />
-// );
-// const wrapper = document.getElementById("app");
-// wrapper ? ReactDOM.render(<App />, wrapper) : null;
-
